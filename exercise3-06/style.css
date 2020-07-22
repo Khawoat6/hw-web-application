@@ -83,5 +83,40 @@ nav a:hover {
   display: grid;
   grid-template-columns: auto auto auto auto;
   margin-bottom: 30px;
+  border: 1px solid black;
+  padding: 15px;
 }
 
+.product-cards img {
+  width: 100%;
+}
+
+.product-cards h2 {
+  margin: 30px 0 15px;
+}
+
+.product-cards a {
+  color: black;
+  text-decoration: none;
+}
+
+.product-cards p {
+  line-height: 1.5;
+}
+
+.original-price {
+  color: gray;
+  text-transform: uppercase;
+}
+
+.current-price span {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.product-cards div {
+}
+
+.saving {
+  color: green;
+}

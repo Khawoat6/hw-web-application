@@ -34,6 +34,33 @@ nav a:hover {
   text-decoration: underline;
 }
 
+.breadcrumb {
+  display: flex;
+  list-style: none;
+}
+
+.breadcrumb li {
+  padding: 10px;
+}
+
+.breadcrumb li:after {
+  content: "/";
+  margin-left: 20px;
+}
+
+.breadcrumb li:last-child:after {
+  content: "";
+}
+
+.breadcrumb a {
+  color: black;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
 .product-cards {
   display: grid;
   grid-template-columns: auto auto auto auto;

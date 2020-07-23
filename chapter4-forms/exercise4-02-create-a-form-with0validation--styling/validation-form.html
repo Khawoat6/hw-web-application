@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Validation form</title>
+  </head>
+  <body>
+    <form action="url_to_sent_form_data" method="post">
+      <fieldset>
+        <div>
+          <label for="first_name">First name:</label><br />
+          <input
+            type="text"
+            name="firstName"
+            id="first_name"
+            placeholder="Your first name"
+            required
+          />
+        </div>
+        <div>
+          <label for="last_name">Last name:</label><br />
+          <input
+            type="text"
+            name="lastName"
+            id="last_name"
+            placeholder="Your last name"
+            required
+          />
+        </div>
+        <label for="counties">Country:</label>
+        <div class="select-wrapper">
+          <select name="" id="counties">
+            <option value="england">England</option>
+            <option value="scotland">Scotland</option>
+            <option value="ireland">Ireland</option>
+            <option value="wales">Wales</option>
+          </select>
+        </div>
+        <div>
+          <label for="message">Message:</label><br />
+          <textarea
+            name=""
+            id="message"
+            cols="20"
+            rows="5"
+            placeholder="Your message"
+            required
+          ></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </fieldset>
+    </form>
+  </body>
+</html>

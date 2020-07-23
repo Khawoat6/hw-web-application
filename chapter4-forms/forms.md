@@ -1,6 +1,5 @@
 Chapter 4 : Forms
 
-
 Form Elements
 
 - form
@@ -11,5 +10,11 @@ Form Elements
 - select
 - button
 
-The form Element
+Styling Form Element
 
+- Textbox
+- Textarea
+- Label
+- Button
+- Select box
+- Validation styling

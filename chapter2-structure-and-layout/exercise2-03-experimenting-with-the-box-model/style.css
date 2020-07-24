@@ -1,0 +1,22 @@
+.box-1 {
+  float: left;
+  width: 200px;
+  height: 200px;
+  padding: 50px;
+  border: 1px solid red;
+}
+.box-2 {
+  float: left;
+  width: 20%;
+  height: 20%;
+  padding-top: 50px;
+  margin-left: 10px;
+  border: 1px solid green;
+}
+.box-3 {
+  float: left;
+  width: 300px;
+  padding: 30px;
+  margin: 50px;
+  border: 50px solid blue;
+}

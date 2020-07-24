@@ -1,0 +1,41 @@
+header,
+nav,
+article,
+section,
+footer {
+  background: #659494;
+  border-radius: 5px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+header:before,
+nav:before,
+footer:before {
+  content: "<";
+}
+header:after,
+nav:after,
+footer:after {
+  content: ">";
+}
+/* CSS code above */
+header,
+nav,
+article,
+section,
+footer {
+  border: 1px solid gray;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+section {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+section div {
+  border: 2px solid white;
+  padding: 30px;
+  margin: 10px;
+}

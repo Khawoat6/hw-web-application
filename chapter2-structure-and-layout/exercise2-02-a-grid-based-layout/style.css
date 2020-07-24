@@ -1,0 +1,11 @@
+div {
+  background: #659494;
+  color: white;
+  text-align: center;
+  margin: 15px;
+  padding: 100px;
+}
+section {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}

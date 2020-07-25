@@ -1,0 +1,29 @@
+.product-card {
+  display: inline-block;
+  border: 1px solid #000;
+  padding: 15px;
+}
+.product-card img {
+  width: 100%;
+}
+.product-card h2 {
+  margin: 30px 0 15px;
+}
+.product-card a {
+  color: black;
+  text-decoration: none;
+}
+.product-card p {
+  line-height: 1.5;
+}
+.original-price {
+  color: gray;
+  text-transform: uppercase;
+}
+.current-price span {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.saving {
+  color: green;
+}

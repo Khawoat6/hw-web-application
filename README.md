@@ -628,8 +628,8 @@ margin: 25px;
 
 [Text-Based Elements](#text-based-element)
 
-- [Heading](#heading)
-- [Paragraphs](#paragraph)
+- [Headings](#Headings)
+- [Paragraphs](#paragraphs)
 - [Inline Text Elements](#inline-text-elements)
 - [Lists](#lists)
 - [Exercise 3.01: Combining Text-Based Elements](#Exercise-3.01:-Combining-Text-Based-Elements)

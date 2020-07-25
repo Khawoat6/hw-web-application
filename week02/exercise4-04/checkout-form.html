@@ -4,51 +4,80 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Checkout form</title>
   </head>
 
   <body>
-    <h1>Checkout</h1>
+    <h1>Checkout Form</h1>
     <form action="url_to_sent_form_data" method="post">
-      <fieldset>
+      <fieldset class="container">
         <h2>Shipping address</h2>
-        <div class="double-input">
+        <div class="single-input">
           <div class="md-form">
-            <label for="first_name">First name: <span>*</span></label
+            <label for="first_name"
+              ><i class="fa fa-user"></i> Full name <span>*</span></label
             ><br />
             <input
               type="text"
-              name="firstName"
-              id="first_name"
+              name="fullName"
+              id="full_name"
               class="form-control"
+              placeholder="J. Prayut"
               required
             />
           </div>
+        </div>
+        <div class="single-input">
           <div class="md-form">
-            <label for="last_name">Last name: <span>*</span></label
+            <label for="email"
+              ><i class="fa fa-envelope"></i> Email <span>*</span></label
             ><br />
             <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="prayut.j@example.com"
+              required
+            />
+          </div>
+        </div>
+        <div class="single-input">
+          <div class="md-form">
+            <label for="address"
+              ><i class="fa fa-address-card-o"></i> Address
+              <span>*</span></label
+            >
+            <input
               type="text"
-              name="lastName"
-              id="last_name"
+              name="address"
+              id="address"
               class="form-control"
               required
             />
           </div>
         </div>
         <div class="single-input">
-          <label for="address">Address: <span>*</span></label>
-          <input
-            type="text"
-            name="address"
-            id="address"
-            class="form-control"
-            required
-          />
+          <div class="md-form">
+            <label for="address"
+              ><i class="fa fa-institution"></i> City <span>*</span></label
+            >
+            <input
+              type="text"
+              name="address"
+              id="address"
+              class="form-control"
+              required
+            />
+          </div>
         </div>
         <div class="double-input">
           <div>
-            <label for="postcode">Postcode: <span>*</span></label>
+            <label for="postcode">Postcode <span>*</span></label>
             <input type="text" name="postcode" id="postcode" required />
           </div>
           <div>
@@ -73,16 +102,7 @@
             id="standard"
             value="standard"
           />
-          <label for="standard">Standard</label>
-        </div>
-        <div class="checkbox">
-          <input
-            type="radio"
-            name="shipping-method"
-            id="nextday"
-            value="nextday"
-          />
-          <label for="nextday">Next day</label>
+          <label for="standard">Shipping address same as billing</label>
         </div>
         <button type="submit">Submit</button>
       </fieldset>

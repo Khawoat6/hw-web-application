@@ -1,5 +1,6 @@
 * {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #f3f3f3;
 }
 
 fieldset {
@@ -21,6 +22,7 @@ select {
   border: 1px solid gray;
   padding: 10px;
   width: 200px;
+  border-radius: 3px;
 }
 select {
   background: transparent;
@@ -45,13 +47,13 @@ select {
   z-index: -1;
 }
 .single-input input {
-  width: 439px;
+  width: 300px;
 }
 .double-input {
   display: flex;
 }
 .double-input > div {
-  margin-right: 15px;
+  margin-right: 10px;
 }
 .checkbox input {
   float: left;
@@ -62,7 +64,7 @@ button {
   background: green;
   border: 0;
   color: white;
-  width: 224px;
+  width: 400px;
   padding: 10px;
   text-transform: uppercase;
 }

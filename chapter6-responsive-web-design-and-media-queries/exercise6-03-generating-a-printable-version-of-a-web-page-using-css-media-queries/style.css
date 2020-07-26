@@ -1,0 +1,41 @@
+header,
+section,
+aside,
+footer {
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+  background: lightgrey;
+  margin-bottom: 20px;
+}
+main {
+  display: flex;
+}
+section {
+  text-align: left;
+  flex: 1 1 auto;
+  margin-right: 20px;
+}
+section p {
+  margin: 0 0 20px;
+}
+section img {
+  float: left;
+  margin: 0 10px 10px 0;
+}
+aside {
+  flex: 0 0 200px;
+}
+/* 3 */
+@media only print {
+  footer,
+  aside {
+    display: none;
+  }
+}
+/* 4 */
+header,
+section {
+  margin-right: 0;
+  background: transparent;
+}

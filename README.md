@@ -1,10 +1,8 @@
-## Chapter 1 : Introduction to HTML and CSS
+# **Chapter 1 : Introduction to HTML and CSS**
 
-### Introduction
+## **HyperText Markup Language (HTML)**
 
-### HyperText Markup Language (HTML)
-
-- Syntax
+- ### Syntax
 
   ![Getting Started](chapter1-intro-to-html-and-css/images/img1.png)
 
@@ -32,7 +30,7 @@
   </p>
   ```
 
-- Content Types
+- ### Content Types
 
   ```
   Metadata
@@ -44,7 +42,7 @@
   Interactive
   ```
 
-- The HTML Document
+- ### The HTML Document
 
   ```html
   <html>
@@ -61,7 +59,7 @@
   </html>
   ```
 
-- The HTML DOM
+- ### The HTML DOM
 
   ```js
   <script>
@@ -71,19 +69,19 @@
   </script>
   ```
 
-- The Doctype Declaration
+- ### The Doctype Declaration
   ```html
   <!DOCTYPE html>
   ```
 
-### Structuring an HTML Document
+## **Structuring an HTML Document**
 
-- HTML
+- ### HTML
   ```html
   <!DOCTYPE html>
   <html lang="en"></html>
   ```
-- Head
+- ### Head
 
   ```html
   <!DOCTYPE html>
@@ -94,7 +92,7 @@
   </html>
   ```
 
-- Body
+- ### Body
 
   ```html
   <!DOCTYPE html>
@@ -106,12 +104,12 @@
   </html>
   ```
 
-- Our First Web Page
-- _Exercise 1.01: Creating a Web Page_
+- ### Our First Web Page
+- ### _Exercise 1.01: Creating a Web Page_
 
   ![Getting Started](chapter1-intro-to-html-and-css/images/ex1-01.png)
 
-- Metadata
+- ### Metadata
 
   ```html
   <base href="http://www.example.com" />
@@ -122,11 +120,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   ```
 
-- Exercise 1.02: Adding Metadata
+- ### _Exercise 1.02: Adding Metadata_
 
   ![Getting Started](chapter1-intro-to-html-and-css/images/ex1-02.png)
 
-### Mistakes in HTML
+## **Mistakes in HTML**
 
 ```html
 <p>
@@ -149,7 +147,7 @@ Lorem ipsum... </p>
 </body>
 ```
 
-### Validating HTML
+## **Validating HTML**
 
 ```link
 https://validator.w3.org/
@@ -1529,6 +1527,225 @@ The HSL function allows you to update the color value of a property by using one
 ### _Activity 5.01: Creating Your Own Theme Using a New Color Palette_
 
 ## Summary
+
+<!-- CONTACT -->
+
+# **Chapter 6: Responsive Web Design and Media Queries**
+
+## **Table Content**
+
+[Mobile-First](#Mobile-First)
+
+- [Responsive Web Design](#Responsive-Web-Design)
+- [Responsive Viewport](#Responsive-Viewport)
+- [Understanding Basic Media Queries](#Understanding-Basic-Media-Queries)
+- [Exercise 6.01: Using Media Queries to Change the Page Layout](#Exercise-6.01:-Using-Media-Queries-to-Change-the-Page-Layout)
+- [Device Orientation Media Queries](#Device-Orientation-Media-Queries)
+- [Exercise 6.02: Using Media Queries to Detect Device Orientation](#Exercise-6.02:-Using-Media-Queries-to-Detect-Device-Orientation)
+- [Combining Multiple Media Queries](#Combining-Multiple-Media-Queries)
+- [Print Stylesheets](#Print-Stylesheets)
+- [Exercise 6.03: Generating a Printable Version of a Web Page Using CSS Media Queries](#Exercise-6.03:-Generating-a-Printable-Version-of-a-Web-Page-Using-CSS-Media-Queries)
+- [Activity 6.01: Refactoring the Video Store Product Cards into a Responsive Web Page](#Activity-6.01:-Refactoring-the-Video-Store-Product-Cards-into-a-Responsive-Web-Page)
+
+## **Mobile-First**
+
+### Responsive Web Design
+
+### Responsive Viewport
+
+- `width`
+- `device-width`
+- `initial-scale`
+- `maximum-scale`
+
+  ```html
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Web Responsive</title>
+    </head>
+    <body>
+      <h1>HTML and CSS</h1>
+      <p>How to create a modern, responsive website with HTML and CSS</p>
+    </body>
+  </html>
+  ```
+
+### Understanding Basic Media Queries
+
+- `@media`
+- `@media only screen and (max-width: 768[x])`
+
+  ![Getting Started](chapter6-responsive-web-design-and-media-queries/images/img1.png)
+
+  ```css
+  /* 0-768px is blue color */
+  @media only screen and (max-width: 768px) {
+    p {
+      color: blue;
+    }
+  }
+  ```
+
+  ![Getting Started](chapter6-responsive-web-design-and-media-queries/images/img2.png)
+
+  ```css
+  /* 769 up is a red color */
+  @media only screen and (min-width: 769px) {
+    p {
+      color: red;
+    }
+  }
+  ```
+
+  ![Getting Started](chapter6-responsive-web-design-and-media-queries/images/img3.png)
+
+  ```css
+  /* between 480-768 is a purple color */
+  @media only screen and (min-width: 480px) and (max-width: 768px) {
+    p {
+      color: purple;
+    }
+  }
+  ```
+
+  ![Getting Started](chapter6-responsive-web-design-and-media-queries/images/img4.png)
+
+  ```css
+  /* height 500 up background-color is pink */
+  @media only screen and (min-height: 500px) {
+    body {
+      background-color: pink;
+    }
+  }
+  ```
+
+  ![Getting Started](chapter6-responsive-web-design-and-media-queries/images/img5.png)
+
+### _Exercise 6.01: Using Media Queries to Change the Page Layout_
+
+![Getting Started](chapter6-responsive-web-design-and-media-queries/images/ex6-01.png)
+
+### Device Orientation Media Queries
+
+- `@media (orientation: landscape)`
+- `@media (orientation: portrait)`
+
+  ```html
+  <!-- Example 6.01 -->
+  <html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <style type="text/css">
+        p.warning {
+          display: none;
+          background: yellow;
+          padding: 10px;
+          font-size: 25px;
+          margin: 0;
+        }
+
+        @media (orientation: landscape) {
+          p.warning {
+            display: block;
+          }
+        }
+        img {
+          width: 100%;
+          height: auto;
+        }
+      </style>
+    </head>
+    <body>
+      <p class="warning">
+        Your device is in landscape orientation, this webpage is best viewed in
+        portrait mode.
+      </p>
+      <img src="http://placehold.it/768x1024" alt="" />
+    </body>
+  </html>
+  ```
+
+  ```css
+  @media (orientation: landscape) and (min-width: 400px) and (max-width: 768px);
+  ```
+
+  ![Getting Started](chapter6-responsive-web-design-and-media-queries/images/img6.png)
+
+  > _Orientation warning demo on a tablet and mobile device_
+
+  ```html
+  <html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <style type="text/css">
+        p.warning {
+          display: none;
+          background: yellow;
+          padding: 10px;
+          font-size: 25px;
+          margin: 0;
+        }
+
+        @media (orientation: landscape) and (min-width: 400px) and (max-width: 768px) {
+          p.warning {
+            display: block;
+          }
+        }
+        img {
+          width: 100%;
+          height: auto;
+        }
+      </style>
+    </head>
+    <body>
+      <p class="warning">
+        Your device is in landscape orientation, this webpage is best viewed in
+        portrait mode.
+      </p>
+      <img src="http://placehold.it/768x1024" alt="" />
+    </body>
+  </html>
+  ```
+
+### _Exercise 6.02: Using Media Queries to Detect Device Orientation_
+
+![Getting Started](chapter6-responsive-web-design-and-media-queries/images/ex6-02.png)
+
+### Combining Multiple Media Queries
+
+```css
+/*
+    width: 0-319 is pink color
+    width: 320-480 is red color
+    width: 481-1279 is pink color
+    width: 1280 up is red color
+*/
+@media screen and (max-width: 480) and (min-width: 320), (min-width: 1280px) {
+  body {
+    background: red;
+  }
+}
+```
+
+![Getting Started](chapter6-responsive-web-design-and-media-queries/images/img7.png)
+
+### Print Stylesheets
+
+- `<link />`
+- `@media`
+
+  ```css
+  <link rel="stylesheet" media="print" href="print.css" />
+  ```
+
+### _Exercise 6.03: Generating a Printable Version of a Web Page Using CSS Media Queries_
+
+![Getting Started](chapter6-responsive-web-design-and-media-queries/images/ex6-03.png)
+
+### _Activity 6.01: Refactoring the Video Store Product Cards into a Responsive Web Page_
 
 <!-- CONTACT -->
 

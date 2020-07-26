@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Responsive</title>
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 480px)"
+      href="mobile.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 481px) and (max-width: 768px)"
+      href="tablet.css"
+    />
+    <link rel="stylesheet" media="print" href="print.css" />
+    <style>
+      @media only screen and (max-width: 768px) {
+        p {
+          color: blue;
+        }
+      }
+      @media only screen and (min-width: 769px) {
+        p {
+          color: red;
+        }
+      }
+      @media only screen and (min-width: 480px) and (max-width: 768px) {
+        p {
+          color: purple;
+        }
+      }
+      @media only screen and (min-height: 500px) {
+        body {
+          background-color: pink;
+        }
+      }
+      @media screen and (max-width: 480px) and (min-width: 320px),
+        (min-width: 1280px) {
+        body {
+          background: red;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>HTML and CSS</h1>
+    <p>How to create a modern, responsive website with HTML and CSS</p>
+  </body>
+</html>

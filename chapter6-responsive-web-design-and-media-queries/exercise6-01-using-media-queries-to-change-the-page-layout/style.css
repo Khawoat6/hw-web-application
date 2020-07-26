@@ -1,0 +1,40 @@
+/* 1. Navigation display after removing flex */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav ul {
+  list-style: none;
+}
+nav a {
+  color: white;
+  background: black;
+  font-weight: bold;
+  display: block;
+  padding: 15px;
+  font-size: 15px;
+  text-decoration: none;
+  text-align: center;
+}
+nav a:hover {
+  background: darkgray;
+}
+
+/* 2. Navigation display after adding flex */
+@media (min-width: 480px) {
+  nav ul {
+    display: flex;
+  }
+  nav li {
+    flex: 1 1 auto;
+  }
+}
+/* 3. Navigation at 479 pixels or below */
+/* 4. Navigation at 480 pixels or above */
+/* 5. Navigation at 767 pixels or above */
+@media only screen and (min-width: 768px) {
+  nav a {
+    font-size: 20px;
+  }
+}

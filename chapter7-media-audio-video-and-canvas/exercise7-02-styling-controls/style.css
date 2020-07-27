@@ -1,0 +1,40 @@
+.audio-player,
+.audio-controls,
+.audio-controls .button {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.audio-controls {
+  align-items: center;
+  background-color: #0e0b16;
+  border: 3px solid #e7dfdd;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 240px;
+  padding: 8px;
+}
+
+.audio-controls .button {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #4717f6;
+  border: 1px solid #e7dfdd;
+  border-radius: 16px;
+  cursor: pointer;
+  outline: none;
+  padding: 4px 16px;
+  text-transform: uppercase;
+}
+
+.audio-status {
+  margin-right: 16px;
+}
+
+[data-state="playing"] #play-btn,
+[data-state="paused"] #pause-btn {
+  display: none;
+}

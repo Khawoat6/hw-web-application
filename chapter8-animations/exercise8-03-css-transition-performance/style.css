@@ -1,0 +1,14 @@
+.transition-me {
+  height: 100px;
+  background: lightskyblue;
+  border: 10px solid wheat;
+  transition-property: background;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+.transition-me:hover {
+  /* those properties will be animated to */
+  background: orange;
+  font-size: 32px;
+  border-color: teal;
+}

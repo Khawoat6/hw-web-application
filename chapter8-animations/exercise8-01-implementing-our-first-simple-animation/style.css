@@ -1,0 +1,13 @@
+.transition-me {
+  text-decoration: 0.2s;
+  padding: 16px;
+  cursor: pointer;
+  /* those properties will be animated from */
+  color: darkorange;
+  background: black;
+}
+.transition-me:hover {
+  /* those properties will be animated to */
+  background: orangered;
+  color: white;
+}

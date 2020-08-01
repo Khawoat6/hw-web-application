@@ -1,0 +1,58 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: initial;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.7778;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
+}
+.product {
+  width: 50vw;
+  min-width: 640px;
+  margin: 2rem;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  flex-flow: column nowrap;
+  border-right: 3px;
+  box-shadow: rgba(0, 23, 74, 0.05) 0px 6px 12px 12px,
+    rgba(0, 23, 24, 0.1) 0 6px 6px 6px, rgba(0, 23, 24, 0.3) 0 1px 0px 0px;
+}
+.product-heading {
+  margin: 0;
+}
+.product-image {
+  padding: 0;
+  margin: 2rem auto;
+  width: 60%;
+  height: 100%;
+}
+.product-description {
+  width: 100%;
+}
+.divider {
+  width: 100%;
+}
+.rating {
+  margin: 1rem auto;
+  width: 60%;
+  display: flex;
+  flex-wrap: row nowrap;
+}
+.rating img {
+  width: 20%;
+  flex-shrink: 1;
+}

@@ -241,4 +241,6 @@ _A better way to do this is to remember the shortcut and press CTRL + SHIFT + i 
 
 - ### _Activity 8.01: Animating Our Video Store Home Page_
 
+  ![Getting Started](images/activity8-01.png)
+
 ## **Summary**

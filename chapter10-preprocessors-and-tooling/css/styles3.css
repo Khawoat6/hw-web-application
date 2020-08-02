@@ -1,0 +1,21 @@
+.transform {
+  display: inline-block;
+  position: relative;
+  top: 100px;
+  left: 100px; }
+
+.transform1 {
+  -webkit-transform: rotate(70deg);
+  -ms-transform: rotate(70deg);
+  transform: rotate(70deg); }
+
+.transform2 {
+  -webkit-transform: rotate(50deg);
+  -ms-transform: rotate(50deg);
+  transform: rotate(50deg); }
+
+.transform3 {
+  left: 250px;
+  -webkit-transform: rotate(1.5);
+  -ms-transform: rotate(1.5);
+  transform: rotate(1.5); }

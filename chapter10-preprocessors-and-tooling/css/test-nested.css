@@ -1,0 +1,37 @@
+article {
+  background: #ccc;
+}
+article p {
+  color: red;
+}
+
+article {
+  background: #ccc;
+}
+article p {
+  color: red;
+}
+article p a {
+  color: blue;
+}
+article p a:after {
+  text-decoration: underline;
+}
+
+article {
+  background: #ccc;
+}
+@media (min-width: 768px) {
+  article {
+    background: #fff;
+  }
+}
+article p {
+  color: red;
+}
+article p a {
+  color: blue;
+}
+article p a:after {
+  text-decoration: underline;
+}

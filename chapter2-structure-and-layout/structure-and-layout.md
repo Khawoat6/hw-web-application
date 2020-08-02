@@ -1,7 +1,5 @@
 # Chapter 2: Structure and Layout
 
-## Introduction
-
 ## Structural Elements
 
 ```html
